@@ -61,7 +61,7 @@
                                         <div class="skills-container">
                                             <img class="programming-lang-img" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="">
                                             <img class="programming-lang-img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg">
-                                            <img class="programming-lang-img" id="js-img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">
+                                            <img class="programming-lang-img" class="js-img" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">
                                             <img class="programming-lang-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
                                             <img class="programming-lang-img" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg">
                                         </div>
@@ -82,7 +82,7 @@
 
             <!---->
 
-            <section class="main-container" data-index="1" data-status="inactive">
+            <section class="main-container" data-index="1" data-status="active">
 
                 <div id="presentation-section">
                     <h1 id="presentation-title">Hello World,<br>I am Martin Gabriel Haas</h1>
@@ -119,7 +119,7 @@
 
             </section>
             <!---->
-            <section class="main-container" data-index="2" data-status="active">
+            <section class="main-container" data-index="2" data-status="inactive">
 
                 <h2 class="htmlStyle-title" id="first-title-lab"><span class="tag-span">&lt;</span><span class="div-span">div </span>
                     <span class="class-span">class=</span>
@@ -127,16 +127,52 @@
                 </h2>
 
                 <div class="project-container">
-                    <h1 class="project-title">My Last Project</h1>
+
+                    <div class="project-title-section">
+                        <div class="project-title-content1">
+                            <h1 class="project-title">My Last Project</h1>
+                        </div>
+                        <div class="project-title-content2">
+                            <img class="programming-lang-img js-img js-termo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">    
+                        </div>          
+                        
+                    </div>
+                    
                     <div class="project-content">
                         <div class="img-project-section">
                             <img class="termo-image" src="img/termo-2.jpg" alt="">
                         </div>
                         <div class="txt-project-section">
-                            <h2>Termo 2.0</h2>
-                            <p class="text">Termo 2.0 is a game inspired by the Brazilian game "Termo", which was initially a project to test my knowledge of HTML, CSS and JavaScript languages.<br>Termo 2.0 tests your knowledge of words in the Portuguese language, and is an interesting challenge for any and all audiences.</p>
-                        </div>                        
+                            <h2 class="termo-text termo-title">Termo 2.0</h2>
+                            <p class="termo-text termo-description">Termo 2.0 is a game inspired by the Brazilian game "Termo", which was initially a project to test my knowledge of HTML, CSS and JavaScript languages.<br><br>Termo 2.0 tests your knowledge of words in the Portuguese language, and is an interesting challenge for any and all audiences.</p>
+                        
+                            <div class="lab-buttons">
+                                <a href="#">
+                                    <button class="lab-button button1 termo-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" fill="none">
+                                            <g id="24 / file / file-code">
+                                                <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M10.4167 2.08333H32.1129L43.75 13.7204V43.75C43.75 46.0512 41.8845 47.9167 39.5833 47.9167H10.4167C8.11548 47.9167 6.25 46.0512 6.25 43.75V6.24999C6.25 3.94881 8.11548 2.08333 10.4167 2.08333ZM27.0833 6.24999H10.4167V43.75H39.5833V18.75H31.25C28.9488 18.75 27.0833 16.8845 27.0833 14.5833V6.24999ZM31.25 7.11294V14.5833H38.7204L31.25 7.11294ZM24.3898 31.8602L21.4435 34.8065L13.7204 27.0833L21.4435 19.3602L24.3898 22.3065L19.6129 27.0833L24.3898 31.8602ZM36.2796 31.25L28.5565 23.5269L25.6102 26.4731L30.3871 31.25L25.6102 36.0269L28.5565 38.9731L36.2796 31.25Z" fill="white"/>
+                                            </g>
+                                        </svg>
+                                        Download<br>Source Code
+                                    </button>
+                                </a>
+    
+                                <a href="#">
+                                    <button class="lab-button button2 termo-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" fill="none">
+                                            <g id="24 / symbols / github">
+                                                <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M20.8692 41.6743C20.8801 41.9302 20.8524 42.1799 20.7986 42.4327C20.7039 42.8769 20.521 43.3469 20.2621 43.7812C19.5262 45.0157 18.2761 45.8394 16.6667 45.8394C12.8752 45.8394 11.3872 43.9794 9.52401 39.3215C8.26216 36.1669 7.66687 35.4228 6.25 35.4228L6.25 31.2561C10.0415 31.2561 11.5295 33.1162 13.3927 37.774C14.6545 40.9287 15.2498 41.6728 16.6667 41.6728C16.6667 41.0683 16.6584 40.5328 16.641 39.8076C16.6001 38.1081 16.5954 37.7611 16.6696 37.3067C16.6992 36.3149 16.9553 35.6111 17.4687 34.9126C12.8191 33.9005 9.68317 31.8101 7.88328 28.4196L7.20904 26.834C6.55218 24.9463 6.25 22.8074 6.25 20.3371C6.25 17.4922 7.11739 14.9485 8.73754 12.8222C8.23214 10.8011 8.30135 8.33172 9.41731 5.54293L9.78196 4.63166L10.7168 4.33263C10.842 4.29259 10.9941 4.25643 11.1729 4.22838C12.9933 3.94267 15.5836 4.62434 18.9699 6.79343C20.9662 6.33067 23.0684 6.09703 25.1849 6.09703C27.0763 6.09703 28.9572 6.28771 30.7534 6.66363C34.048 4.60043 36.5672 3.95334 38.3385 4.22874C38.5152 4.25622 38.6659 4.29168 38.79 4.33105L39.7307 4.62935L40.0957 5.54617C41.072 7.99771 41.2395 10.257 40.8843 12.2339C42.7468 14.4688 43.75 17.2162 43.75 20.3371C43.75 22.9683 43.5615 24.9467 43.0196 26.8715L42.4477 28.441C40.9506 31.8279 37.6489 33.9417 32.5574 34.9484C33.0866 35.6812 33.3333 36.425 33.3333 37.5061V39.5894C33.3333 40.599 33.3333 40.6301 33.331 41.6728C33.3358 41.7477 33.342 41.7843 33.3488 41.8072C33.3472 41.8077 33.3333 45.8394 33.3333 45.8394C31.5588 45.8394 30.2393 44.974 29.5904 43.6089C29.2539 42.9011 29.1534 42.2253 29.1667 41.6432V37.5061C29.1667 37.3314 29.1606 37.3213 28.7352 36.8959C27.5981 35.7588 27.0833 34.9009 27.0833 33.3394V31.4549L28.9585 31.2665C34.5403 30.706 37.5761 29.1559 38.5827 26.8913L39.053 25.6054C39.4273 24.2609 39.5833 22.6235 39.5833 20.3371C39.5833 17.9078 38.7352 15.901 37.1312 14.2976L36.2496 13.4163L36.6094 12.2228C36.9291 11.1625 37.0051 9.9079 36.6669 8.47687C36.6107 8.49111 36.5523 8.50663 36.4916 8.52351C35.3761 8.83407 33.9834 9.50045 32.3051 10.6223L31.5396 11.1339L30.6459 10.9123C28.9175 10.4837 27.0601 10.2637 25.1849 10.2637C23.0997 10.2637 21.0385 10.529 19.1343 11.0481L18.205 11.3015L17.41 10.7576C15.6742 9.57016 14.2322 8.86398 13.0759 8.5341C12.9933 8.51054 12.9147 8.48947 12.8399 8.47068C12.4365 10.1269 12.5961 11.4876 13.0046 12.5087L13.4945 13.7329L12.5977 14.6996C11.1685 16.24 10.4167 18.1145 10.4167 20.3371C10.4167 22.3721 10.6549 24.0582 11.0914 25.3284L11.6366 26.6189C12.9995 29.1762 15.8942 30.7147 21.0554 31.268L22.9167 31.4675V33.3394C22.9167 34.9009 22.4019 35.7588 21.2648 36.8959C20.8394 37.3213 20.8333 37.3314 20.8333 37.5061L20.7974 37.8913C20.7737 38.0176 20.7737 38.3437 20.8064 39.7076C20.8215 40.3348 20.8301 40.8313 20.8326 41.3501C20.8575 41.4575 20.8612 41.5268 20.8692 41.6743Z" fill="black"/>
+                                            </g>
+                                        </svg>
+                                        Visit<br>on GitHub
+                                    </button>
+                                </a>
+    
+                            </div>
+                        </div>           
                     </div>
+                    
                 </div>
                 <h2 class="htmlStyle-title" id="second-title-lab">
                     <span class="tag-span">&lt;/</span><span class="div-span">div</span><span class="tag-span">&gt;</span>
@@ -144,7 +180,44 @@
             </section>
             <!---->
             <section class="main-container" data-index="3" data-status="inactive">
-
+                <h2 class="contact-thanks">Thank You!</h2>
+                <p class="coment-contact coment">/*I'm literally developing my tech career<br>it feels like I'm dreaming*/</p>
+                <div class="vscode-container">
+                    <div class="class-contactme code-content">
+                        <p>
+                            <span class="class">.contactMe </span>
+                            <span class="brackets">&#123;</span>
+                        </p>
+                        <p>
+                            <span class="content">e-mail: </span>
+                            <span class="content-content">'martinhaas2005@gmail.com'</span>
+                        </p>
+                        <p>
+                            <span class="content">phone: </span>
+                            +55 (54) 9 9999-1497
+                        </p>
+                        <span class="brackets">&#125;</span>
+                    </div>
+                    <div class="class-socialmedia code-content">
+                        <p>
+                            <span class="class">.socialMedia </span>
+                            <span class="brackets">&#123;</span>
+                        </p>
+                        <p>
+                            <span class="content">gitHub: </span>
+                            <span class="content-content">'MartinGHaas'</span>
+                        </p>
+                        <p>
+                            <span class="content">linkedIn: </span>
+                            <span class="content-content">'Martin Gabriel Haas'</span>
+                        </p>
+                        <p>
+                            <span class="content">instagram: </span>
+                            <span class="content-content">'@martingabriel_haas'</span>
+                        </p>
+                        <span class="brackets">&#125;</span>
+                    </div>
+                </div>
             </section>
 
 
